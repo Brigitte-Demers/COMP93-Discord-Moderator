@@ -36,6 +36,8 @@ TOKEN = 'your_token_here'
 Install the necessary Python packages:
 
 ```bash
+pip install torch
+pip install pylance
 pip install discord spacy transformers
 python -m spacy download en_core_web_sm
 ```
