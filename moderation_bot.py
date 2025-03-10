@@ -20,7 +20,8 @@ intents.message_content = True  # To access message content
 client = discord.Client(intents=intents)
 
 # List of banned words
-banned_words = ["stupid", "idiot", "dumb", "moron", "fool"]
+with open('bannedWords.txt', 'r') as f:
+    banned_words = f.read()
 
 @client.event
 async def on_ready():
